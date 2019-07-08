@@ -29,6 +29,8 @@ public class SegmentService {
 
             // Config dataSource
             dataSource = new DruidDataSource();
+            // TODO 我加的
+            dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
             dataSource.setUrl(properties.getProperty(Constants.LEAF_JDBC_URL));
             dataSource.setUsername(properties.getProperty(Constants.LEAF_JDBC_USERNAME));
             dataSource.setPassword(properties.getProperty(Constants.LEAF_JDBC_PASSWORD));
